@@ -31,11 +31,10 @@ class Dashboard extends Component {
         </Grid>
         {/* <div className="topbar-buffer" /> */}
         <Grid item sm={3}>
-        {/* This is where map is rendered */}
         </Grid>
         <Grid item sm={9}>
           <div className="map-container">
-
+            {/* This is where map is rendered */}
           </div>
         </Grid>
       </Grid>
