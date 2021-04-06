@@ -37,26 +37,33 @@
   }
 } */
 
+body {
+  background-color: #939597;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #939597;
+  /* min-height: 100vh; */
   display: flex;
 }
 
 .dash {
   background-color: white;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
 }
 
 .general-top-bar {
   height: 60;
   justify-content: center;
+
 }
 
 .topbar-toolbar {
   display: flex;
   justify-content: space-between;
+  color: #E5A823;
+  background-color: #0055A2;
 }
 
 .topbar-buffer {
