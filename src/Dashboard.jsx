@@ -18,10 +18,10 @@ class Dashboard extends Component {
           <AppBar className="general-top-bar" position="absolute">
             <Toolbar className="topbar-toolbar">
               <Typography variant="h5" color="inherit">
-                SJSU
+                <b>SJSU</b> CMPE '21
               </Typography>
               <Typography variant="h5" color="inherit">
-                Wildfire Lightning
+                Wildfire Analysis Through Lightning
               </Typography>
               <Typography variant="h5" color="inherit">
                 Group 29
