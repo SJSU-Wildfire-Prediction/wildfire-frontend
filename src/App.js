@@ -5,6 +5,8 @@ import { Grid } from "@material-ui/core";
 
 import Dashboard from "./Dashboard"
 
+require('dotenv').config();
+
 class App extends Component {
   constructor(props) {
     super(props);

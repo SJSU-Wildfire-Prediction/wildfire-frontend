@@ -77,4 +77,18 @@ body {
   margin: 1vh 0 10vh 0;
 }
 
+.grid-center {
+  display: flex;
+  align-items: center;
+}
+
+.lightning-table {
+  background-color: #0055A2;
+  height: 40vh;
+  display: flex;
+  margin: 40vh 5vh 40vh 5vh;
+  padding: 0px 16px 0px 16px;
+  color: #E5A823;
+}
+
 
