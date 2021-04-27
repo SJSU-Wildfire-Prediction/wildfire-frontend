@@ -8,8 +8,8 @@ const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY
 class GoogleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33
+      lat: 37.3344476,
+      lng: -121.8826716
     },
     zoom: 11
   };
