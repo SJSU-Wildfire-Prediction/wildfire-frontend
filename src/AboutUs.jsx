@@ -11,6 +11,8 @@ import danielle from './images/danielle.jfif';
 import matthew from './images/Matthew.jfif';
 import sowmya from './images/Sowmya.jfif';
 
+const style = { width: "300px" };
+
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -49,52 +51,46 @@ class AboutUs extends Component {
                 </Toolbar>
               </AppBar>
             </Grid>
-          
-            <Grid item sm={3}>
+
+            <Grid item xs={12}></Grid>
+            <Grid item xs={1}></Grid>
+            
+            <Grid item sm={2}>
                 <Typography variant="h4" color="inherit">
                    Meet the Team 29 Members
                 </Typography>
-            </Grid>    
+            </Grid>
+
+            <Grid item sm={1}></Grid>
+
                 <Grid item sm={3}>
-                <Row>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0 mx-10">
-                            <img class="img-fluid rounded-circle mb-3" src={ryota} alt="Ryota" />
-                            <h3>Ryota S.</h3>
-                            <h4> Major: CMPE </h4>
-                            <h5>Responsibilities: Facilitator, Data Gathering, API</h5>                         
-                        </div>
+                    <Row>
+                    <div>
+                        <img class="img-fluid rounded-circle mb-3" src={ryota} style={style} alt="Ryota" />
+                        <h3>Ryota S.</h3>
+                        <h4> Major: CMPE </h4>
+                        <h5>Responsibilities: Facilitator, Data Gathering, API</h5>                         
+                    
+                        <img class="img-fluid rounded-circle mb-3" src={matthew} style={style} alt="..." />
+                        <h3>Matthew K.</h3>
+                        <h4> Major: CMPE </h4>
+                        <h5>Responsibilities: Technical Manager, Front-end, UI</h5>     
                     </div>
-            
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0 mx-10">
-                            <img class="img-fluid rounded-circle mb-3" src={matthew} alt="..." />
-                            <h3>Matthew K.</h3>
-                            <h4> Major: CMPE </h4>
-                            <h5>Responsibilities: Technical Manager, Front-end, UI</h5>     
-                        </div>
-                    </div>
-                </Row>
+                    </Row>
                 </Grid>
 
-                <Grid item sm={6}>
+                <Grid item sm={4}>
                     <Row>
-                        <div class="col-lg-4">
-                            <div class="testimonial-item mx-auto mb-5 mb-lg-0 mx-10">
-                                <img class="img-fluid rounded-circle mb-3" src={sowmya} alt="..." />
-                                <h3>Sowmya B.</h3>
-                                <h4> Major: CMPE </h4>
-                                <h5>Responsibilities: Coordinator, Back-end, Machine Learning</h5>     
-                            </div>
-                        </div>
+                        <div>
+                            <img class="img-fluid rounded-circle mb-3" src={sowmya} style={style} alt="..." />
+                            <h3>Sowmya B.</h3>
+                            <h4> Major: CMPE </h4>
+                            <h5>Responsibilities: Coordinator, Back-end, Machine Learning</h5>     
 
-                        <div class="col-lg-4">
-                            <div class="testimonial-item mx-auto mb-5 mb-lg-0 mx-10">
-                                <img class="img-fluid rounded-circle mb-3" src={danielle} alt="..." />
-                                <h3>Danielle S.</h3>
-                                <h4> Major: CMPE </h4>
-                                <h5>Responsibilities: Lead, Front-end, Data Gathering</h5>     
-                            </div>
+                            <img class="img-fluid rounded-circle mb-3" src={danielle} style={style} alt="..." />
+                            <h3>Danielle S.</h3>
+                            <h4> Major: CMPE </h4>
+                            <h5>Responsibilities: Lead, Front-end, Data Gathering</h5>     
                         </div>
                     </Row>
                 </Grid>
