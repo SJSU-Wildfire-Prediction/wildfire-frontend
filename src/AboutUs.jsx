@@ -11,7 +11,7 @@ import danielle from './images/danielle.jfif';
 import matthew from './images/Matthew.jfif';
 import sowmya from './images/Sowmya.jfif';
 
-const style = { width: "300px" };
+const style = { height: "270px" };
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -54,7 +54,7 @@ class AboutUs extends Component {
 
             <Grid item xs={12}></Grid>
             <Grid item xs={1}></Grid>
-            
+
             <Grid item sm={2}>
                 <Typography variant="h4" color="inherit">
                    Meet the Team 29 Members
@@ -74,7 +74,7 @@ class AboutUs extends Component {
                         <img class="img-fluid rounded-circle mb-3" src={matthew} style={style} alt="..." />
                         <h3>Matthew K.</h3>
                         <h4> Major: CMPE </h4>
-                        <h5>Responsibilities: Technical Manager, Front-end, UI</h5>     
+                        <h5>Responsibilities: Tech Manager, Front-end, UI</h5>     
                     </div>
                     </Row>
                 </Grid>
