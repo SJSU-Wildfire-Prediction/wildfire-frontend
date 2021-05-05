@@ -5,6 +5,7 @@ import { Grid } from "@material-ui/core";
 
 import Dashboard from "./Dashboard"
 import LightningHistory from "./LightningHistory"
+import AboutUs from "./AboutUs"
 
 require('dotenv').config();
 
@@ -35,6 +36,12 @@ class App extends Component {
               path="/dashboard"
               component={Dashboard}
               // render={() => Dashboard}
+            />
+            <Route
+              exact
+              path="/aboutus"
+              component={AboutUs}
+              // render={() => AboutUs}
             />
           {/* </Grid> */}
         </div>
