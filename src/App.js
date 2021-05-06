@@ -31,6 +31,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App-header">
+          <Navbar/>
           {/* <Grid container spacing={8}> */}
             <Route
               exact

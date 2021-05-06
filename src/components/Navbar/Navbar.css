@@ -25,7 +25,7 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 70vw;
+    width: 70%;
     justify-content: end;
     margin-right: 2rem;
 }
@@ -107,5 +107,10 @@
     .fa-times{
         color: #E5A823;
         font-size: 2rem;
+    }
+
+    Button{
+        display: none;
+        
     }
 }
