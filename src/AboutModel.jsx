@@ -31,7 +31,6 @@ class AboutModel extends Component {
       //
       return (
         <div class = ''>
-
                 <Grid item sm={3}>
                     <Row>
                     <div>

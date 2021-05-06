@@ -40,7 +40,6 @@ class App extends Component {
               exact
               path="/AboutModel"
               component={AboutModel}
-              // render={() => Dashboard}
             />
           {/* </Grid> */}
         </div>
