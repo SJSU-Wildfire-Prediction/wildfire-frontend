@@ -6,6 +6,7 @@ import { Grid } from "@material-ui/core";
 import Dashboard from "./Dashboard"
 import LightningHistory from "./LightningHistory"
 import AboutUs from "./AboutUs"
+import Navbar from "./components/Navbar/Navbar"
 
 require('dotenv').config();
 
@@ -42,6 +43,17 @@ class App extends Component {
               path="/aboutus"
               component={AboutUs}
               // render={() => AboutUs}
+            />
+
+              <Route
+              exact
+              path="/Navbar"
+              component={Navbar}
+            />
+             <Route
+              exact
+              path="/LightningHistory"
+              component={LightningHistory}
             />
           {/* </Grid> */}
         </div>
