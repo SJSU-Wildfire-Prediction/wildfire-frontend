@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Grid } from "@material-ui/core";
 
 import Dashboard from "./Dashboard"
+import AboutModel from "./AboutModel"
 
 require('dotenv').config();
 
@@ -33,6 +34,12 @@ class App extends Component {
               exact
               path="/dashboard"
               component={Dashboard}
+              // render={() => Dashboard}
+            />
+            <Route
+              exact
+              path="/AboutModel"
+              component={AboutModel}
               // render={() => Dashboard}
             />
           {/* </Grid> */}
