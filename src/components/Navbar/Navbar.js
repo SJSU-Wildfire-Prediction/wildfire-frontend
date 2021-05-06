@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import {AppBar, Toolbar, Button, Typography, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from "@material-ui/core";
 import {MenuItems} from "./MenuItems"
 import './Navbar.css'
 import "../../App.css";
-import {Button} from "../Button"
 
 
 class Navbar extends Component {
@@ -18,7 +18,7 @@ class Navbar extends Component {
                         </i>
                 </h1>
                 <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-poo-storm'}></i>
                 </div>
 
                 <ul>
@@ -36,9 +36,7 @@ class Navbar extends Component {
                 
                     
                 </ul>
-                <Button></Button>
             </nav>
-
         )
     }
 }
