@@ -50,12 +50,9 @@ class AboutUs extends Component {
                   <Typography variant="h5" color="inherit">
                     Group 29
                   </Typography>
-                  <Navbar></Navbar>
                 </Toolbar>
               </AppBar>
             </Grid>
-            <Grid item sm={10}></Grid>
-            <Grid item sm={10}></Grid>
             <Grid item xs={12}></Grid>
             <Grid item xs={2}></Grid>
 

@@ -35,7 +35,6 @@ class LightningHistory extends Component {
                   <Typography variant="h5" color="inherit">
                     Group 29
                   </Typography>
-                  <Navbar></Navbar>
                 </Toolbar>
               </AppBar>
             </Grid>
