@@ -45,12 +45,7 @@ class App extends Component {
               component={AboutUs}
               // render={() => AboutUs}
             />
-
-              <Route
-              exact
-              path="/Navbar"
-              component={Navbar}
-            />
+            
              <Route
               exact
               path="/LightningHistory"

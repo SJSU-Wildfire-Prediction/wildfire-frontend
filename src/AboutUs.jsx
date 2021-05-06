@@ -54,7 +54,6 @@ class AboutUs extends Component {
               </AppBar>
             </Grid>
             <Grid item xs={12}></Grid>
-            <Grid item xs={2}></Grid>
 
             <Grid item sm={2}>
                 <Typography variant="h4" color="inherit">

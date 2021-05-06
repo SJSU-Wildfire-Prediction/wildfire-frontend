@@ -8,8 +8,6 @@ import "../../App.css";
 class Navbar extends Component {
     state = {clicked: false}
 
-
-
     render (){
         return(
             <nav className = "NavbarItem">
