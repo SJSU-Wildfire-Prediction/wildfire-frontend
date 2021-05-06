@@ -31,9 +31,27 @@ class AboutModel extends Component {
       //
       return (
         <div class = ''>
+
+                
+                <Grid item xs={8}>
+                <AppBar className="general-top-bar" position="absolute">
+                    <Toolbar className="topbar-toolbar">
+                    <Typography variant="h5" color="inherit">
+                        <b>SJSU</b> CMPE '21
+                    </Typography>
+                    <Typography variant="h5" color="inherit">
+                        Wildfire Analysis Through Lightning
+                    </Typography>
+                    <Typography variant="h5" color="inherit">
+                        Group 29
+                    </Typography>
+                    </Toolbar>
+                </AppBar>
+                </Grid>
+
                 <Grid item sm={3}>
                     <Row>
-                    <div>
+                    <div class = "relative">
                         <h1 align = "center">Sample data</h1>
                         <img class="img-fluid rounded-circle mb-3" src={data} style={style} alt="data" />                            
                     </div>
