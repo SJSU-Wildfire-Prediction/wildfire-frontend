@@ -34,6 +34,9 @@ class Dashboard extends Component {
                     Wildfire Analysis Through Lightning
                   </Typography>
                   <Typography variant="h5" color="inherit">
+                    Dashboard
+                  </Typography>
+                  <Typography variant="h5" color="inherit">
                     Group 29
                   </Typography>
                 </Toolbar>

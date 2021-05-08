@@ -6,19 +6,19 @@ export const MenuItems = [
     },
 
     {
-        title: 'ML',
-        url: '#',
+        title: 'About ML',
+        url: './AboutModel',
         cName: 'nav-links'
     },
 
     {
-        title: 'LightningHistory',
+        title: 'Lightning History',
         url: './LightningHistory',
         cName: 'nav-links'
     },
 
     {
-        title: 'AboutUs',
+        title: 'About Us',
         url: './AboutUs',
         cName: 'nav-links'
     },

@@ -12,15 +12,20 @@
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "google-map-react": "^2.1.9",
+    "jquery": "^3.6.0",
+    "jquery-csv": "^1.0.11",
     "leaflet": "^1.7.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
+    "react-data-table-component": "^6.11.7",
     "react-dom": "^17.0.1",
     "react-leaflet": "^3.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "reactstrap": "^8.9.0",
-    "web-vitals": "^1.1.0"
+    "styled-components": "^5.3.0",
+    "web-vitals": "^1.1.0",
+    "xlsx": "^0.16.9"
   },
   "scripts": {
     "start": "react-scripts start",
