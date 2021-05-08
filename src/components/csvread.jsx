@@ -25,15 +25,25 @@ class csvread extends Component {
         <TableContainer component={Paper}>
           <TableHead>
             <TableRow>
-              <TableCell>Lightning </TableCell>
-              <TableCell align="right">Date</TableCell>
-              <TableCell align="right">Count</TableCell>
-              <TableCell align="right">Lat</TableCell>
-              <TableCell align="right">Lon</TableCell>
+              <TableCell align="center">Date</TableCell>
+              <TableCell align="center">Count</TableCell>
+              <TableCell align="center">Lat</TableCell>
+              <TableCell align="center">Lon</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-
+            <TableRow>
+              <TableCell align="center">20210104 </TableCell>
+              <TableCell align="center">1</TableCell>
+              <TableCell align="center">39.8</TableCell>
+              <TableCell align="center">-122.3</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell align="center">20210104 </TableCell>
+              <TableCell align="center">1</TableCell>
+              <TableCell align="center">39.9</TableCell>
+              <TableCell align="center">-122</TableCell>
+            </TableRow>
           </TableBody>
         </TableContainer>
       </div>
