@@ -4,6 +4,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Grid } from "@material-ui/core";
 
 import Dashboard from "./Dashboard"
+import LightningHistory from "./LightningHistory"
+import AboutUs from "./AboutUs"
+import AboutModel from "./AboutModel"
+import Navbar from "./components/Navbar/Navbar"
 
 require('dotenv').config();
 
@@ -28,14 +32,34 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App-header">
+          <Navbar />
           {/* <Grid container spacing={8}> */}
-            <Route
-              exact
-              path="/dashboard"
-              component={Dashboard}
-              // render={() => Dashboard}
-            />
-          {/* </Grid> */}
+          <Route
+            exact
+            path="/dashboard"
+            component={Dashboard}
+          // render={() => Dashboard}
+          />
+          <Route
+            exact
+            path="/aboutus"
+            component={AboutUs}
+          // render={() => AboutUs}
+          />
+
+          <Route
+            exact
+            path="/LightningHistory"
+            component={LightningHistory}
+
+          />
+
+          <Route
+            exact
+            path="/AboutModel"
+            component={AboutModel}
+          />
+
         </div>
       </BrowserRouter>
     )
