@@ -3,7 +3,6 @@ import $ from "jquery"
 import { TableContainer, TableHead, TableRow, TableCell, TableBody, Paper } from "@material-ui/core";
 import axios from "axios";
 import "../App.css";
-import lightning from './dataFiles/2021Lightning.csv';
 
 class csvread extends Component {
   constructor(props) {

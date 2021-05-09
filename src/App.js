@@ -8,7 +8,6 @@ import LightningHistory from "./LightningHistory"
 import AboutUs from "./AboutUs"
 import AboutModel from "./AboutModel"
 import Navbar from "./components/Navbar/Navbar"
-import csvread from "./components/csvread";
 
 require('dotenv').config();
 
@@ -52,13 +51,6 @@ class App extends Component {
             exact
             path="/LightningHistory"
             component={LightningHistory}
-
-          />
-
-          <Route
-            exact
-            path="/csvread"
-            component={csvread}
 
           />
 
