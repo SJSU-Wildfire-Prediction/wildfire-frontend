@@ -57,19 +57,21 @@ class AboutUs extends Component {
               </Toolbar>
             </AppBar>
           </Grid>
-          <Grid item xs={12}></Grid>
-
-          <Grid item sm={2}>
-            <Typography variant="h4" color="inherit">
-              Meet the Team 29 Members
-                </Typography>
-          </Grid>
-
           <Grid item sm={1}></Grid>
 
-          <Grid item sm={3}>
+
+          <Grid item sm={14}>
+            <div class="relative">
+              <h1 align="center">Meet the Team 29 Members</h1>
+            </div>
+          </Grid>
+
+          <Grid item sm={6}></Grid>
+          <Grid item sm={2}></Grid>
+
+          <Grid item sm={4}>
             <Row>
-              <div>
+              <div class="relative">
                 <img class="img-fluid rounded-circle mb-3" src={ryota} style={style} alt="Ryota" />
                 <h3>Ryota S.</h3>
                 <h4> Major: CMPE </h4>

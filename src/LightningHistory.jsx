@@ -71,6 +71,12 @@ class LightningHistory extends Component {
                     <TableCell align="center">39.9</TableCell>
                     <TableCell align="center">-122</TableCell>
                   </TableRow>
+                  <TableRow>
+                    <TableCell align="center">20210104 </TableCell>
+                    <TableCell align="center">3</TableCell>
+                    <TableCell align="center">39.9</TableCell>
+                    <TableCell align="center">-122.3</TableCell>
+                  </TableRow>
                 </TableBody>
               </TableContainer>
             </Row>
