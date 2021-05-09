@@ -1,42 +1,49 @@
 import jsonData from './dataFiles/2021LightningData.json';
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
-import { lightningData } from "./dataFiles/2021lightning";
+import { lightningData } from "./dataFiles/2021LightningData.json";
 
 
-function readjson() {
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('2021LightningData.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
+function Readjson() {
+  const [data, setData] = useState([]);
+  const GetData = () => {
+    fetch('./dataFiles/2021LightningData.json'
+      , {
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      }
     )
-      .then(function(response){
+      .then(function (response) {
         console.log(response)
+        alert('done');
         return response.json();
       })
-      .then(function(myJson) {
+      .catch(function(error){console.error('Readjson: ' + error)})
+      .then(function (myJson) {
         console.log(myJson);
         setData(myJson)
       });
   }
-  useEffect(()=>{
-    getData()
-  },[])
-  return (
-    <div className="readjson">
-     {
-       data && data.length>0 && data.map((item)=><p>{item.about}</p>)
-     }
-    </div>
-  );
+  useEffect(() => {
+    console.log(lightningData);
+    GetData()
+  }, [])
+  
+    return (
+      <div className="Readjson">
+        {
+          data && data.length > 0 && data.map((item) => <p>{item.about}</p>)
+        }
+      </div>
+    );
+
+    
+  
 }
 
-export default readjson;
+export default Readjson;
 
 
 
