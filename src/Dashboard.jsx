@@ -51,7 +51,7 @@ class Dashboard extends Component {
                 </div>
               </Row>
               <Row>
-                <LightningStrikesTable />
+                {/* <LightningStrikesTable /> */}
               </Row>
             </Grid>
             <Grid item sm={9}>
