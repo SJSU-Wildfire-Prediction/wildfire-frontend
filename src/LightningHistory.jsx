@@ -19,8 +19,8 @@ class LightningHistory extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        data : lightningData,
-        data2 : FireHistory
+      lightningData : lightningData,
+      FireHistory : FireHistory
     }
   }
 
@@ -58,15 +58,15 @@ class LightningHistory extends Component {
               <TableContainer component={Paper}>
                 <TableHead>
                   <TableRow>
-                    <TableCell align="center">Date</TableCell>
-                    <TableCell align="center">Count</TableCell>
-                    <TableCell align="center">Lat</TableCell>
-                    <TableCell align="center">Lon</TableCell>
+                    <TableCell align="center"><h2>Date</h2></TableCell>
+                    <TableCell align="center"><h2>Count</h2></TableCell>
+                    <TableCell align="center"><h2>Lat</h2></TableCell>
+                    <TableCell align="center"><h2>Lon</h2></TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   
-                  {this.state.data.map(function (entry) {
+                  {this.state.lightningData.map(function (entry) {
                     return <TableRow>
                       <TableCell align="center">{entry.DATE}</TableCell>
                       <TableCell align="center">{entry.TOTAL_COUNT}</TableCell>
@@ -78,25 +78,24 @@ class LightningHistory extends Component {
               </TableContainer>
             </Row>
           </Grid>
-          <Grid item sm={13}>
+          <Grid item sm={8}>
             <Row>
               <h1>Fire History</h1>
               <TableContainer component={Paper}>
                 <TableHead>
                   <TableRow>
-                    <TableCell align="center">Name</TableCell>
-                    <TableCell align="center">Date</TableCell>
-                    <TableCell align="center">County</TableCell>
+                    <TableCell align="center"><h2>Name</h2></TableCell>
+                    <TableCell align="center"><h2>Date</h2></TableCell>
+                    <TableCell align="center"><h2>County</h2></TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   
-                  {this.state.data2.map(function (entry) {
+                  {this.state.FireHistory.map(function (entry) {
                     return <TableRow>
                       <TableCell align="center">{entry.incident_name}</TableCell>
                       <TableCell align="center">{entry.incident_dateonly_created}</TableCell>
                       <TableCell align="center">{entry.incident_county}</TableCell>
-                      
                     </TableRow>
                   })}
                 </TableBody>
