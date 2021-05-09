@@ -18,7 +18,15 @@ class LightningHistory extends Component {
     this.state = {
       lightningData : lightningData,
       FireHistory : FireHistory
+    };
+  }
+
+  formatDate(date){
+    if (date.length !== 8) {
+      return
     }
+    // Format of input date is [year][month][day]
+    return (`${date.substring(4, 6)}/${date.substring(6, 8)}/${date.substring(0, 4)}`)
   }
 
 
@@ -62,14 +70,17 @@ class LightningHistory extends Component {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  
-                  {this.state.lightningData.map(function (entry) {
-                    return <TableRow>
-                      <TableCell align="center">{entry.DATE}</TableCell>
+
+                  {this.state.lightningData.map((entry) => {
+                    return (
+                    <TableRow>
+                      {/* <TableCell align="center">{entry.DATE}</TableCell> */}
+                      <TableCell align="center">{this.formatDate.call(this, String(entry.DATE))}</TableCell>
                       <TableCell align="center">{entry.TOTAL_COUNT}</TableCell>
                       <TableCell align="center">{entry.LAT}</TableCell>
                       <TableCell align="center">{entry.LON}</TableCell>
                     </TableRow>
+                    );
                   })}
                 </TableBody>
               </TableContainer>
@@ -87,13 +98,15 @@ class LightningHistory extends Component {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  
-                  {this.state.FireHistory.map(function (entry) {
-                    return <TableRow>
+
+                  {this.state.FireHistory.slice(0).reverse().map((entry, idx) => {
+                    return (
+                    <TableRow key={entry, idx}>
                       <TableCell align="center">{entry.incident_name}</TableCell>
                       <TableCell align="center">{entry.incident_dateonly_created}</TableCell>
                       <TableCell align="center">{entry.incident_county}</TableCell>
                     </TableRow>
+                    );
                   })}
                 </TableBody>
               </TableContainer>
