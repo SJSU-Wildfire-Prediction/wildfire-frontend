@@ -88,10 +88,12 @@ body {
 }
 
 .map-container {
-  background-color: white;
+  /* background-color: white; */
+  position: relative;
   width: 100vh;
   height: 100vh;
   margin: 1vh 0 10vh 0;
+  padding: 0 0 0 25%;
 }
 
 .grid-center {
@@ -106,6 +108,25 @@ body {
   margin: 40vh 5vh 40vh 5vh;
   padding: 0px 16px 0px 16px;
   color:#E5A823 ;
+}
+
+.ml-container {
+  /* border: 1px solid red; */
+  /* display: flex;
+  padding: 0 0 0 100%; */
+  position: absolute;
+  right: 0;
+  padding: 0 5%;
+}
+
+.test-container {
+  /* border: 1px solid red; */
+  padding: 0 0 0 15%;
+}
+
+.ml-test-div {
+  /* display: flex; */
+  /* align-content: space-between; */
 }
 
 

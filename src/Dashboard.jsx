@@ -4,6 +4,7 @@ import {Row, Col} from "reactstrap";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 // import GoogleMapReact from "google-map-react";
 import GoogleMap from "./GoogleMap";
+import MLTest from "./MLTest";
 import "./App.css";
 import LoadingSpinner from "./LoadingSpinner";
 import LightningStrikesTable from "./LightningStrikesTable";
@@ -54,11 +55,18 @@ class Dashboard extends Component {
                 {/* <LightningStrikesTable /> */}
               </Row>
             </Grid>
+            <Grid container className="test-container">
             <Grid item sm={9}>
               <div className="map-container">
                 {/* This is where map is rendered */}
                 <GoogleMap />
               </div>
+            </Grid>
+            <Grid item>
+              <div className="ml-container">
+                <MLTest />
+              </div>
+            </Grid>
             </Grid>
           </Grid>
         )}
