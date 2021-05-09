@@ -74,7 +74,6 @@ class LightningHistory extends Component {
                   {this.state.lightningData.map((entry) => {
                     return (
                     <TableRow>
-                      {/* <TableCell align="center">{entry.DATE}</TableCell> */}
                       <TableCell align="center">{this.formatDate.call(this, String(entry.DATE))}</TableCell>
                       <TableCell align="center">{entry.TOTAL_COUNT}</TableCell>
                       <TableCell align="center">{entry.LAT}</TableCell>
