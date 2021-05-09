@@ -4,7 +4,6 @@ import "./App.css";
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Typography, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@material-ui/core";
 import { Row, Col } from "reactstrap";
-import Navbar from "./components/Navbar/Navbar";
 
 
 import ryota from './images/ryota.jpg';

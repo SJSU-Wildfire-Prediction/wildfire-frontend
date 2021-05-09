@@ -4,10 +4,7 @@ import "./App.css";
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Typography, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@material-ui/core";
 import { Row, Col } from "reactstrap";
-import Navbar from "./components/Navbar/Navbar";
-import csvread from "./components/csvread";
 import LoadingSpinner from "./LoadingSpinner";
-import LightningStrikesTable from "./LightningStrikesTable";
 import { lightningData } from "./components/dataFiles/2021LightningData.json";
 import { FireHistory } from "./components/dataFiles/FireHistory.json";
 
