@@ -66,6 +66,7 @@ class MLTest extends Component {
     return (
       <div className="ml-test-div">
         <Row>
+          <span>Test our machine learning model</span>
           <InputGroup>
             <Input
               id="lat"
